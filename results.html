@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Plant_Disease</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>Plant_Disease</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="upload.html">Upload</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <div class="results-header">
+                <h1>Analysis Results</h1>
+                <p>Here's what we found about your plant</p>
+            </div>
+
+            <div class="results-container">
+                <!-- Image Preview -->
+                <div class="results-image">
+                    <div class="image-wrapper">
+                        <img id="resultImage" src="" alt="Analyzed Plant">
+                        <div class="image-badge">
+                            <i class="fas fa-check-circle"></i> Analyzed
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Disease Information -->
+                <div class="results-info">
+                    <!-- Disease Name -->
+                    <div class="info-card disease-card">
+                        <div class="card-header">
+                            <i class="fas fa-virus"></i>
+                            <h2>Disease Detected</h2>
+                        </div>
+                        <div class="card-body">
+                            <h3 id="diseaseName" class="disease-name">Loading...</h3>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="info-card">
+                        <div class="card-header">
+                            <i class="fas fa-info-circle"></i>
+                            <h2>Description</h2>
+                        </div>
+                        <div class="card-body">
+                            <p id="diseaseDescription">Loading description...</p>
+                        </div>
+                    </div>
+
+                    <!-- Solution -->
+                    <div class="info-card solution-card">
+                        <div class="card-header">
+                            <i class="fas fa-first-aid"></i>
+                            <h2>Recommended Solution</h2>
+                        </div>
+                        <div class="card-body">
+                            <p id="diseaseSolution">Loading solution...</p>
+                        </div>
+                    </div>
+
+                    <!-- Fertilizer Recommendation -->
+                    <div class="info-card fertilizer-card">
+                        <div class="card-header">
+                            <i class="fas fa-seedling"></i>
+                            <h2>Recommended Fertilizer</h2>
+                        </div>
+                        <div class="card-body">
+                            <p id="fertilizer">Loading fertilizer recommendation...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="results-actions">
+                <a href="upload.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-left"></i> Back to Upload
+                </a>
+                <a href="thankyou.html" class="btn btn-primary">
+                    Next <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="results-tips">
+                <h3><i class="fas fa-lightbulb"></i> Additional Tips</h3>
+                <div class="tips-container">
+                    <div class="tip-box">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Prevention</h4>
+                        <p>Always practice good sanitation and remove infected leaves immediately</p>
+                    </div>
+                    <div class="tip-box">
+                        <i class="fas fa-eye"></i>
+                        <h4>Monitor</h4>
+                        <p>Regularly inspect your plants for early signs of disease</p>
+                    </div>
+                    <div class="tip-box">
+                        <i class="fas fa-water"></i>
+                        <h4>Care</h4>
+                        <p>Ensure proper watering and avoid overhead irrigation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-leaf"></i> Plant_Disease</h3>
+                    <p>Empowering sustainable agriculture through AI-powered disease detection.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="upload.html">Upload</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@Plantdisease.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</i>
+                        <li><i class="fas fa-map-marker-alt"></i> Agriculture Tech Hub</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Plant_Disease. All rights reserved. | Together we can grow greener <?</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

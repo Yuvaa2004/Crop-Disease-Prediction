@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image - Plant_Disease</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <span>Plant_Disease</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="upload.html" class="active">Upload</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <div class="upload-container">
+                <h1 class="upload-title">Upload or Capture Your Plant Image</h1>
+                <p class="upload-subtitle">Take a clear photo of the affected plant leaf for accurate disease detection</p>
+
+                <!-- Upload Area -->
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Choose Your Method</h3>
+                    <p>Upload an image from your device or capture one using your camera</p>
+
+                    <div class="upload-buttons">
+                        <!-- Upload from Computer -->
+                        <label for="fileInput" class="btn btn-primary">
+                            <i class="fas fa-folder-open"></i> Upload from Computer
+                        </label>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+
+                        <!-- Capture from Camera -->
+                        <label for="cameraInput" class="btn btn-secondary">
+                            <i class="fas fa-camera"></i> Capture from Camera
+                        </label>
+                        <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display: none;">
+                    </div>
+
+                    <p class="upload-note">Supported formats: JPG, JPEG, PNG | Max size: 10MB</p>
+                </div>
+
+                <!-- Image Preview Area (Hidden by default) -->
+                <div class="preview-area" id="previewArea" style="display: none;">
+                    <h3>Image Preview</h3>
+                    <div class="preview-container">
+                        <img id="previewImage" src="" alt="Preview">
+                    </div>
+                    <div class="preview-info">
+                        <p><i class="fas fa-file-image"></i> <span id="fileName"></span></p>
+                        <p><i class="fas fa-hdd"></i> <span id="fileSize"></span></p>
+                    </div>
+                    <div class="preview-actions">
+                        <button class="btn btn-outline" id="changeImageBtn">
+                            <i class="fas fa-redo"></i> Change Image
+                        </button>
+                        <button class="btn btn-primary" id="analyzeBtn">
+                            <span class="analyze-text"><i class="fas fa-microscope"></i> Analyze Disease</span>
+                            <span class="loading-spinner" style="display: none;"><i class="fas fa-spinner fa-spin"></i> Analyzing...</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Instructions -->
+                <div class="upload-instructions">
+                    <h3><i class="fas fa-lightbulb"></i> Tips for Best Results</h3>
+                    <div class="tips-grid">
+                        <div class="tip-item">
+                            <i class="fas fa-sun"></i>
+                            <p>Ensure good lighting conditions</p>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-bullseye"></i>
+                            <p>Focus clearly on the affected area</p>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-image"></i>
+                            <p>Avoid blurry or dark images</p>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-leaf"></i>
+                            <p>Capture the entire leaf if possible</p>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Keep the background simple</p>
+                        </div>
+                        <div class="tip-item">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Get close enough for details</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-leaf"></i> Plant_Disease</h3>
+                    <p>Empowering sustainable agriculture through AI-powered disease detection.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="upload.html">Upload</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@Plantdisease.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Agriculture Tech Hub</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Plant_Disease. All rights reserved. | Together we can grow greener 🌿</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
